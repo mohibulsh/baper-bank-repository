@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank</title>
+      <!-- talwain css link -->
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class=" mt-6">
+        <h1 class="text-5xl text-center">welcome to our bank
+            <span class="font-semibold text-orange-500">system </span>!!!</h1>
+    </header>
+
+   <main>
+    <section class="my-12">
+        <div class="grid grid-cols-3 gap-16 w-9/12 mx-auto text-white mt-16">
+            <div class="bg-sky-500 p-12 rounded-xl ">
+                <h1 class="text-5xl font-semibold">Deposit</h1>
+                <h1 class="text-3xl font-bold mt-2">$ <span id="deposit-sum">00</span></h1>
+            </div>
+
+            <div class="bg-emerald-500 p-12 rounded-xl ">
+                <h1 class="text-5xl font-semibold">Withdraw</h1>
+                <h1 class="text-3xl font-bold mt-2" >$ <span id="withdraw-sum">00</span></h1>
+            </div>
+
+            <div class="bg-purple-500 p-12 rounded-xl ">
+                <h1 class="text-5xl font-semibold">Blance</h1>
+                <h1 class="text-3xl font-bold mt-2">$<span id="blance-sum">1240</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deposit and withdraw filed -->
+     <section class="mt-16">
+              <div class="grid grid-cols-2 gap-16 w-9/12 mx-auto mt-16">
+                 <div class="bg-fuchsia-800 p-12 rounded-xl ">
+                    <h1 class="text-5xl font-semibold mb-6  text-white">please Deposit</h1> 
+                    <input id="deposit-field" type="text" class=" w-9/12 my-4 pl-3 p-0.5 rounded block" placeholder="$ amount you want to deposit" >
+                    <button id="deposit-btn" class="bg-sky-700 py-2 px-6 rounded font-semibold text-xl hover:bg-sky-500 text-white" >Deposit</button>
+                 </div>  
+
+
+                 <div class="bg-teal-600 p-12 rounded-xl ">
+                    <h1 class="text-5xl font-semibold mb-6  text-white">please Withdraw</h1> 
+                    <input  id="withdraw-field" type="text" class=" w-9/12 my-4 pl-3 p-0.5 rounded block" placeholder="$ amount you want to withdraw">
+                    <button id="withdraw-btn" class="bg-sky-700 py-2 px-6 rounded font-semibold text-xl hover:bg-sky-500 text-white" >Withdraw</button>
+                 </div>  
+              </div>
+     </section>
+
+     <section>
+        <div class="w-9/12 mx-auto">
+            <h1 class="mt-12 text-3xl font-bold">back the loging page  
+            <button id="back-btn" class="bg-sky-400 py-2 px-6 rounded font-semibold text-xl hover:bg-sky-500 text-white" >back</button> !!!</h1>
+        </div>
+     </section>
+   </main>
+      
+<!-- javascript scr link -->
+   <script src="js/utility.js"></script>
+   <script src="js/deposit.js"></script>
+   <script src="js/withdraw.js"></script>
+</body>
+</html>
